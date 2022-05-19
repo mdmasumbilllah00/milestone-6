@@ -6,6 +6,14 @@ h1 {
     margin-bottom: 30px;
 }
 
+section {
+    margin-bottom: 100px;
+}
+
+h2::before {
+    content: "==> "
+}
+
 .title {
     color: rgb(254, 148, 18);
 }

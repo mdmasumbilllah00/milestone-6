@@ -93,9 +93,40 @@ document.getElementById("friend-buttton").addEventListener("click", function () 
     var newFriend = `
     <h1 style="margin-bottom:0px;">Friend ${friend}</h1>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla atque impedit eligendi repudiandae. Quam fuga optio ex consequuntur laborum molestias!</p>
-    
+
     `
     var element = document.createElement("div");
     element.innerHTML = newFriend;
     document.getElementById("new-friend").appendChild(element)
+})
+
+
+// var add2 = function add2(num1, num2) {
+//     return num1 + num2
+// }
+// console.log(add2(15, 17))
+
+document.getElementById("make-array").addEventListener("click", function () {
+    var numbers = document.getElementById("array-number").value;
+    if (numbers != "") {
+        numbers = numbers.split(",");
+        var newNumbers = [];
+        for (var number of numbers) {
+            number = parseInt(number);
+            newNumbers.push(number)
+        }
+        document.getElementById("array-display").innerText = `your number is ${newNumbers}`
+    }
+})
+document.getElementById("find-max").addEventListener("click", function () {
+    var numbers = document.getElementById("array-number").value;
+    if (numbers != "") {
+        numbers = numbers.split(",");
+        var newNumbers = [];
+        for (var number of numbers) {
+            number = parseInt(number);
+            newNumbers.push(number)
+        }
+        alert(Math.max(...newNumbers))
+    }
 })
