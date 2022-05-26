@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="container m-4">
+    <section>
+        <h2>2.1 use variable in template string</h2>
+        <pre>
+            write your template string hear :-  
+            <textarea name="" id="var-tem-string-npt" cols="40" rows="6"></textarea>
+
+            <button class="btn btn-sm btn-warning" id="var-tem-string-btn">var-tem-string</button>
+        </pre>
+        <div class="" id="var-tem-string-display"></div>
+    </section>
+    <section>
+        <h2>2.2 use object property in template string</h2>
+        tihs is a object blew:-
+        <pre>
+            var students ={ name: <input  class="obj-temp-string-npt" type="text" id="obj-tem-string-npt-name">, fatherName: <input class="obj-temp-string-npt" type="text" id="obj-tem-string-npt-fname">, motherName: <input class="obj-temp-string-npt" type="text" id="obj-tem-string-npt-mname">, age: <input class="obj-temp-string-npt" type="text" id="obj-tem-string-npt-age"> }
+
+            <button class="btn btn-sm btn-warning" id="obj-tem-string-btn">obj-tem-string</button>
+        </pre>
+        <div class="" id="obj-tem-string-display"></div>
+    </section>
+    <section>
+        <h2>3.1 arrow function with one paraeter. will return the number after dividing by 5</h2>
+        <pre>
+            var divide5Number = x => x / 5;
+            divide5Number(<input class="obj-temp-string-npt text-center" type="text" id="arow-oneP-div5-npt-num">)
+
+            <button class="btn btn-sm btn-warning" id="arow-oneP-div5-btn">arow-oneP-div5</button>
+        </pre>
+        <h5 class="" id="arow-oneP-div5-display"></h5>
+    </section>
+    <section>
+        <h2>3.2 arrow function with two parameters will add 2 to ewach number and then multiple the results</h2>
+        <pre>
+            var twoParaAdd2AndMult = (x, y) => (x + 2) * (y + 2);
+            twoParaAdd2AndMult(<input class="obj-temp-string-npt text-center" type="text" id="arow-twoP-add2and*all-npt-num1">,<input class="obj-temp-string-npt text-center" type="text" id="arow-twoP-add2and*all-npt-num2">)
+
+            <button class="btn btn-sm btn-warning" id="arow-twoP-add2and*all-btn">arow-twoP-add2and*all</button>
+        </pre>
+        <h5 class="" id="arow-twoP-add2and*all-display"></h5>
+    </section>
+    <section>
+        <h2>3.3 arrow function three parameter will return all three multiplay</h2>
+        <pre>
+            var threeParaMulti = (x, y, z) => x * y * z;
+            threeParaMulti(<input class="binput text-center" type="text" id="arow-threeP-multi-npt-num1">,<input class="binput text-center" type="text" id="arow-threeP-multi-npt-num2">,<input class="binput text-center" type="text" id="arow-threeP-multi-npt-num3">)
+
+            <button class="btn btn-sm btn-warning" id="arow-threeP-multi-btn">arow-threeP-multi</button>
+        </pre>
+        <h5 class="" id="arow-threeP-multi-display"></h5>
+    </section>
+    <section>
+        <h2>3.4 arrow function three parameter will return all three multiplay and multiline arow function</h2>
+        <pre>
+            var threeParaAdd2MultiLine = (x, y, z) => {
+                x = x + 2;
+                y = y + 2;
+                z = z + 2;
+                var ans = x * y * z;
+                return ans;
+            }
+            threeParaAdd2MultiLine(<input class="binput text-center" type="text" id="arow-threeP-multi-line-npt-num1">,<input class="binput text-center" type="text" id="arow-threeP-multi-line-npt-num2">,<input class="binput text-center" type="text" id="arow-threeP-multi-line-npt-num3">)
+
+            <button class="btn btn-sm btn-warning" id="arow-threeP-multi-line-btn">arow-threeP-multi-line</button>
+        </pre>
+        <h5 class="" id="arow-threeP-multi-line-display"></h5>
+    </section>
+    <section>
+        <h2>4. take anumbers arry and map to get each element multiplai by 5. must use arraw function. </h2>
+        <pre>
+            giv your numbers:- <input type="text" class="binput text-center w-25" id="number-array-map-multi5">
+            var numbers5 = numbers.map(number => number * 5);
+
+            <button class="btn btn-sm btn-warning" id="number-array-map-multi5-btn">arow-threeP-multi-line</button>
+        </pre>
+        <h5 class="" id="number-array-map-multi5-display"></h5>
+    </section>
+    <section>
+        <h2>5. take anumbers arry and use filter . must use arraw function. </h2>
+        <pre>
+            giv your numbers:- <input type="text" class="binput text-center w-25" id="number-array-filter-array">
+            var numfilter = numbers.filter(number => number > <input type="text" class="binput text-center" id="number-array-filter-condition">);
+
+            <button class="btn btn-sm btn-warning" id="number-array-filter-multi5-btn">arow-threeP-multi-line</button>
+        </pre>
+        <h5 class="" id="number-array-filter-multi5-display"></h5>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
