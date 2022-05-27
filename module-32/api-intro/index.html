@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro api</title>
+    <style>
+        .mrgin {
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hello API</h2>
+    <button onclick="loadData()">load data </button>
+    <button onclick="loadUsers()">load users </button>
+    <button onclick="loadPost()">load post </button>
+    <button onclick="loadPhotos()">load photos </button>
+    <button onclick="loadAlbum()">load albums </button>
+    <ul id="users-name"></ul>
+    <div id="photos"></div>
+    <ol id="albums-name"></ol>
+
+    <script src="api.js"></script>
+</body>
+
+</html>
