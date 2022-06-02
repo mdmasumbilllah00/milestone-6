@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .cuntry {
+            height: 200px;
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        #all-cuntries {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #all-cuntries {
+            position: relative;
+            height: 500px;
+            overflow: scroll;
+            overflow-x: hidden;
+            border: 1px solid;
+            border-radius: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <H1>all-cuntries</H1>
+    <select onchange="altName()" name="" id="cuntries-name" class="mb-3"></select>
+
+    <div id="all-cuntries">
+
+    </div>
+    <iframe src="" frameborder="0" id="map" name="map">
+
+    </iframe>
+    <div id="cuntry-flag">
+
+    </div>
+
+
+    <script src="all-cuntries.js"></script>
+</body>
+
+</html>
