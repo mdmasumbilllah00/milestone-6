@@ -13,11 +13,13 @@
 <body class="container">
     <h1 class="text-center">Welcome to TheMealDB</h1>
     <div class="input-group mb-3 w-50 mx-auto">
-        <input id="food-name" type="text" class="form-control" placeholder="search food you want"
-            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <input onkeypress="myFunction(event)" id="food-name" type="text" class="form-control"
+            placeholder="search food you want" aria-label="Recipient's username" aria-describedby="button-addon2">
         <button onclick="searchFood()" class="btn btn-outline-secondary" type="button" id="search-btn">Button</button>
     </div>
+    <div id="full-details">
 
+    </div>
     <div id="foods" class="row row-cols-1 row-cols-md-3 g-4">
 
     </div>
@@ -26,7 +28,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!-- <script src="themel-dibi.js"></script> -->
-    <script src="mealdb-asing.js"></script>
+    <!-- <script src="mealdb-asing.js"></script> -->
+    <script src="themeldb.js"></script>
 </body>
 
 </html>
